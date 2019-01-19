@@ -20,8 +20,15 @@ ul{
   align-items: center;
   justify-content: space-between;
 }
-.logo-text{
+.logo-text-first{
+  font-weight: bolder;
   color: white;
+  display: flex;
+}
+.logo-text-second{
+  font-weight: unset;
+  color: white;
+  font-size: 24px;
 }
 .logo-wrapper{
   display: flex;
@@ -52,6 +59,9 @@ ul{
   text-transform: uppercase;
   margin-left: 10px;
 }
+.nav-link:hover{
+  color: black;
+}
 .header-text-block{
   margin-top: 100px;
   display: flex;
@@ -62,6 +72,9 @@ ul{
   color: white;
   text-transform: capitalize;
   font-size: 40px;
+}
+.header-text:hover{
+  color: black;
 }
 
 /* main */
@@ -194,4 +207,62 @@ ul{
   color: black;
   text-transform: capitalize;
   background-color: #ececec;
+}
+.tag-link:hover{
+  background-color: #009bdf;
+  color: white;
+}
+/* plagination */
+.plagination{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.plagination-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  padding: 0;
+}
+.plagination-list{
+  list-style: none;
+}
+.plagination-link{
+  text-decoration: none;
+  color: black;
+  background: #ececec;
+  padding: 15px;
+}
+.plagination-link:last-child{
+  padding: 15px 25px 15px 25px;
+  text-transform: capitalize;
+}
+.plagination-link:hover{
+  background-color: #009bdf;
+  color: white;
+}
+/* footer */
+
+.footer{
+  height: 150px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+.footer-block{
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.copyrigth{
+  color: #404040;
+  font-size: 13px;
+}
+.heart{
+  color: red;
+}
+.footer-icon{
+  color: white;
+  font-size: 20px;
 }
