@@ -2,6 +2,9 @@ body{
   font-family: Arial;
   margin: 0;
 }
+ul{
+  margin: 0;
+}
 
 /* header */
 
@@ -62,7 +65,10 @@ body{
 }
 
 /* main */
-
+.main{
+  width: 1170px;
+  margin: 0 auto;
+}
 /* section */
 
 .content{
@@ -79,7 +85,7 @@ body{
 .icon{
   width: 15px;
   height: 15px; 
-  color: blue;
+  color: #3498db;
   margin-right: 5px;
 }
 .section-text-title{
@@ -95,5 +101,97 @@ body{
 .main-block{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+/* aside */
+
+/* search */
+.aside-search{
+  margin-top: 50px;
+  display: inline-block;
+}
+.aside-search-input{
+  width: 295px;
+  height: 55px;
+}
+.btn-search{
+  width: 55px;
+  height: 55px;
+  background-color: #3498db;
+  border: 0;
+}
+.btn-search{
+  color: white;
+}
+
+/* categories */
+
+.aside-title{
+  margin-top: 40px;
+  color: #3498db;
+  text-transform: uppercase;
+  /* padding: 15px; */
+}
+.categories-list{
+  list-style: none;
+  margin-bottom: 20px;  
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.categories-link{
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;  
+  display: inline-block;
+}
+.categories-num{
+  text-decoration: none;
+  color: black;
+  display: flex;
+}
+/* Post */
+
+.post-list{
+  list-style: none;
+  margin-bottom: 30px;
+}
+.post-link{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-bottom: 1px solid #d7d7d7;
+  padding-bottom: 15px;
+}
+
+/* archives */
+
+.archive-list{
+  list-style: none;
+  margin-bottom: 30px;
+}
+.archive-link{
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+}
+
+/* tag */
+.tag-item{
+  display: flex;
+  flex-wrap: wrap;
+  width: 380px; 
+  height: 100px;
+}
+.tag-list{
+  list-style: none;
+  margin: 20px 10px 0 ;
+}
+.tag-link{
+  padding: 15px 25px 15px 25px;
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  background-color: #ececec;
 }
